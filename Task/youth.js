@@ -231,12 +231,12 @@ else if ($request && $request.method != `OPTIONS`&& $request.url.match(/\/v5\/us
     $.log(`${$.name} 获取阅读: 成功,timebodyVal: ${timebodyVal}`)
     $.msg($.name, `获取阅读时长: 成功🎉`, ``)
   }
-else if ($request && $request.method != `OPTIONS`&& $request.url.match(/\/article\/red_packet/)) {
-   const redpbodyVal = $request.body
-    if (redpbodyVal)        $.setdata(redpbodyVal, 'red_zq')
-    $.log(`${$.name} 获取惊喜红包: 成功,redpbodyVal: ${redpbodyVal}`)
-    $.msg($.name, `获取惊喜红包请求: 成功🎉`, ``)
-  }
+//else if ($request && $request.method != `OPTIONS`&& $request.url.match(/\/article\/red_packet/)) {
+  // const redpbodyVal = $request.body
+    //if (redpbodyVal)        $.setdata(redpbodyVal, 'red_zq')
+   // $.log(`${$.name} 获取惊喜红包: 成功,redpbodyVal: ${redpbodyVal}`)
+   // $.msg($.name, `获取惊喜红包请求: 成功🎉`, ``)
+  //}
  }
 
 function sign() {
