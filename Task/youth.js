@@ -106,11 +106,11 @@ if ($.isNode()) {
           cookiesArr.push(CookieYouth[item])
         }
       })
-    Object.keys(ARTBODYs).forEach((item) => {
-        if (ARTBODYs[item]) {
-          readArr.push(ARTBODYs[item])
-        }
-      })
+    //Object.keys(ARTBODYs).forEach((item) => {
+      //  if (ARTBODYs[item]) {
+      //    readArr.push(ARTBODYs[item])
+     //   }
+   //   })
     Object.keys(REDBODYs).forEach((item) => {
         if (REDBODYs[item]) {
           redpArr.push(REDBODYs[item])
@@ -127,7 +127,7 @@ if ($.isNode()) {
     } else {
     cookiesArr.push($.getdata('youthheader_zq'));
     redpArr.push($.getdata('red_zq'));
-    readArr.push($.getdata('read_zq'));
+    //readArr.push($.getdata('read_zq'));
     timeArr.push($.getdata('readtime_zq'));
 }
 
@@ -148,7 +148,7 @@ if (isGetCookie = typeof $request !== 'undefined') {
   for (let i = 0; i < cookiesArr.length; i++) {
     if (cookiesArr[i]) {
       signheaderVal = cookiesArr[i];
-      articlebodyVal = readArr[i];
+      //articlebodyVal = readArr[i];
       timebodyVal = timeArr[i];
       redpbodyVal = redpArr[i];
       $.index = i + 1;
