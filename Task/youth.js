@@ -168,10 +168,10 @@ else if ($.time('HH')>4&&$.time('HH')<8){
   }
   await SevCont();
   await comApp();
-  await ArticleShare();
+  //await ArticleShare();
   await openbox();
-  await getAdVideo();
-  await gameVideo();
+  //await getAdVideo();
+  //await gameVideo();
   //await readArticle();
   //await Articlered();
   //await readTime();
@@ -219,12 +219,12 @@ function GetCookie() {
     $.log(`${$.name} 获取Cookie: 成功,signheaderVal: ${signheaderVal}`)
     $.msg($.name, `获取Cookie: 成功🎉`, ``)
   }
-else if ($request && $request.method != `OPTIONS`&& $request.url.match(/\/article\/complete/)) {
-   const articlebodyVal = $request.body
-    if (articlebodyVal)        $.setdata(articlebodyVal,'read_zq')
-    $.log(`${$.name} 获取阅读: 成功,articlebodyVal: ${articlebodyVal}`)
-    $.msg($.name, `获取阅读请求: 成功🎉`, ``)
-  }
+//else if ($request && $request.method != `OPTIONS`&& $request.url.match(/\/article\/complete/)) {
+//   const articlebodyVal = $request.body
+//    if (articlebodyVal)        $.setdata(articlebodyVal,'read_zq')
+//    $.log(`${$.name} 获取阅读: 成功,articlebodyVal: ${articlebodyVal}`)
+//    $.msg($.name, `获取阅读请求: 成功🎉`, ``)
+//  }
 else if ($request && $request.method != `OPTIONS`&& $request.url.match(/\/v5\/user\/app_stay/)) {
    const timebodyVal = $request.body
     if (timebodyVal)        $.setdata(timebodyVal,'readtime_zq')
