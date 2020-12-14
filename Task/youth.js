@@ -172,7 +172,7 @@ else if ($.time('HH')>4&&$.time('HH')<8){
   await openbox();
   await getAdVideo();
   await gameVideo();
-  await readArticle();
+  //await readArticle();
   await Articlered();
   await readTime();
 for ( k=0;k<5;k++){
