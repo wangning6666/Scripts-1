@@ -111,11 +111,11 @@ if ($.isNode()) {
       //    readArr.push(ARTBODYs[item])
      //   }
    //   })
-    Object.keys(REDBODYs).forEach((item) => {
-        if (REDBODYs[item]) {
-          redpArr.push(REDBODYs[item])
-        }
-      })
+   // Object.keys(REDBODYs).forEach((item) => {
+     //   if (REDBODYs[item]) {
+    //      redpArr.push(REDBODYs[item])
+     //   }
+    //  })
     Object.keys(READTIME).forEach((item) => {
         if (READTIME[item]) {
           timeArr.push(READTIME[item])
@@ -126,7 +126,7 @@ if ($.isNode()) {
       console.log(`============ 脚本执行-北京时间(UTC+8)：${new Date(new Date().getTime() + 8 * 60 * 60 * 1000).toLocaleString()}  =============\n`)
     } else {
     cookiesArr.push($.getdata('youthheader_zq'));
-    redpArr.push($.getdata('red_zq'));
+    //redpArr.push($.getdata('red_zq'));
     //readArr.push($.getdata('read_zq'));
     timeArr.push($.getdata('readtime_zq'));
 }
@@ -150,7 +150,7 @@ if (isGetCookie = typeof $request !== 'undefined') {
       signheaderVal = cookiesArr[i];
       //articlebodyVal = readArr[i];
       timebodyVal = timeArr[i];
-      redpbodyVal = redpArr[i];
+      //redpbodyVal = redpArr[i];
       $.index = i + 1;
       console.log(`-------------------------\n\n开始【中青看点${$.index}】`)
     }
